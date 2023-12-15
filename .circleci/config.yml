@@ -34,3 +34,7 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:build
+      - run:
+          name: Deploy Front-End
+          command: |
+            npm run frontend:deploy
